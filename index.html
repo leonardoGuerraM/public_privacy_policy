@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad / Privacy Policy - AudioDosis</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --border: #e2e8f0;
+            --badge-bg: #e0f2fe;
+            --badge-text: #0369a1;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --card-bg: #1e293b;
+                --text-main: #f1f5f9;
+                --text-muted: #94a3b8;
+                --primary: #38bdf8;
+                --primary-dark: #0284c7;
+                --border: #334155;
+                --badge-bg: #0c4a6e;
+                --badge-text: #bae6fd;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px 24px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .app-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .badge {
+            background-color: var(--badge-bg);
+            color: var(--badge-text);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-top: 4px;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .lang-btn {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background-color: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px 24px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: var(--primary);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 6px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background-color: var(--badge-bg);
+            border-left: 4px solid var(--primary);
+            padding: 16px;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: var(--text-main);
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            padding: 24px 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-title">
+                <h1>AudioDosis</h1>
+                <span class="badge">100% Local · Offline</span>
+            </div>
+            <p class="subtitle">Política de Privacidad / Privacy Policy</p>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 6px;">
+                Identificador de la aplicación: <code>com.audiodosis.audiodosis</code> | Última actualización: Octubre 2026
+            </p>
+            <div class="lang-switch">
+                <button id="btn-es" class="lang-btn active" onclick="setLanguage('es')">Español</button>
+                <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+            </div>
+        </header>
+
+        <!-- SECCIÓN EN ESPAÑOL -->
+        <main id="content-es" class="card">
+            <h2>1. Introducción y Compromiso de Privacidad</h2>
+            <p>
+                <strong>AudioDosis</strong> es una aplicación móvil desarrollada para proporcionar recordatorios de medicación accesibles mediante avisos sonoros y por voz, diseñada especialmente para personas mayores.
+            </p>
+            <div class="highlight-box">
+                <p>
+                    🔒 <strong>Privacidad absoluta:</strong> AudioDosis funciona <strong>100% en local</strong>. No recopilamos, no almacenamos en servidores remotos, no transmitimos ni compartimos ninguna información personal, médica o de uso. No existe registro, ni creación de cuentas, ni conexión con la nube.
+                </p>
+            </div>
+
+            <h2>2. Información que procesa la aplicación</h2>
+            <p>
+                Todos los datos ingresados en la aplicación permanecen exclusivamente en el dispositivo del usuario:
+            </p>
+            <ul>
+                <li><strong>Recordatorios y Alarmas:</strong> Horas programadas, nombres de los medicamentos y textos libres de las tomas.</li>
+                <li><strong>Historial de Tomas:</strong> Registro local de confirmación de dosis tomadas u omitidas.</li>
+                <li><strong>Preferencias del Usuario:</strong> Idioma, tamaño de texto y configuración de avisos.</li>
+                <li><strong>Copias de Seguridad:</strong> Si el usuario decide generar una copia de seguridad o un informe para el médico, este archivo se guarda localmente en su dispositivo y solo el usuario decide si lo comparte externamente.</li>
+            </ul>
+
+            <h2>3. Permisos de Android y Justificación</h2>
+            <p>
+                Para cumplir con su objetivo de asistir puntualmente a personas mayores con su medicación, AudioDosis solicita únicamente los siguientes permisos esenciales de Android:
+            </p>
+            <ul>
+                <li><strong><code>POST_NOTIFICATIONS</code>:</strong> Necesario para mostrar notificaciones visibles con el aviso de la toma programada.</li>
+                <li><strong><code>SCHEDULE_EXACT_ALARM</code> y <code>USE_EXACT_ALARM</code>:</strong> Crítico para disparar la alarma en el minuto exacto establecido para la medicación, garantizando la puntualidad del tratamiento médico.</li>
+                <li><strong><code>USE_FULL_SCREEN_INTENT</code>:</strong> Permite que la pantalla del aviso se encienda y se muestre directamente sobre la pantalla de bloqueo cuando suena la alarma, permitiendo a personas mayores confirmar su toma sin tener que desbloquear el teléfono.</li>
+                <li><strong><code>RECEIVE_BOOT_COMPLETED</code>:</strong> Permite restablecer automáticamente las alarmas programadas cuando el teléfono se reinicia o se enciende.</li>
+                <li><strong><code>VIBRATE</code> y <code>WAKE_LOCK</code>:</strong> Permiten reproducir el sonido de aviso, la vibración y activar brevemente el procesador para que el sintetizador de voz (TTS) anuncie el medicamento con la pantalla apagada.</li>
+            </ul>
+
+            <h2>4. Servicios de Terceros y Publicidad</h2>
+            <p>
+                AudioDosis <strong>no contiene publicidad</strong>, no incluye compras dentro de la app, y no integra bibliotecas ni SDKs de análisis o seguimiento de terceros (como Firebase Analytics, Facebook SDK, Google Analytics o similares).
+            </p>
+
+            <h2>5. Privacidad de Menores</h2>
+            <p>
+                La aplicación no recopila información personal de ningún usuario, incluidos menores de 13 años.
+            </p>
+
+            <h2>6. Seguridad de los Datos</h2>
+            <p>
+                La seguridad de tus datos depende de la seguridad de tu propio dispositivo, ya que ningún dato sale de él. Recomendamos mantener protegido el dispositivo mediante las medidas de seguridad habituales (PIN, huella o contraseña).
+            </p>
+
+            <h2>7. Contacto</h2>
+            <p>
+                Si tienes alguna pregunta o inquietud respecto a esta Política de Privacidad, puedes ponerte en contacto a través de la página del proyecto en GitHub:
+            </p>
+            <p>
+                <a href="https://github.com/leonardoGuerraM" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">github.com/leonardoGuerraM</a>
+            </p>
+        </main>
+
+        <!-- SECCIÓN EN INGLÉS -->
+        <main id="content-en" class="card hidden">
+            <h2>1. Introduction & Privacy Commitment</h2>
+            <p>
+                <strong>AudioDosis</strong> is a mobile application developed to provide accessible medication reminders with voice and sound alerts, designed especially for seniors.
+            </p>
+            <div class="highlight-box">
+                <p>
+                    🔒 <strong>Absolute Privacy:</strong> AudioDosis operates <strong>100% locally</strong> on your device. We do not collect, store on remote servers, transmit, or share any personal, medical, or usage data. There are no user accounts, no tracking, and no cloud backends.
+                </p>
+            </div>
+
+            <h2>2. Information Processed by the Application</h2>
+            <p>
+                All data entered into the application remains exclusively on the user's device:
+            </p>
+            <ul>
+                <li><strong>Reminders and Alarms:</strong> Scheduled times, medication names, and reminder text.</li>
+                <li><strong>Dose History:</strong> Local logs of confirmed or missed doses.</li>
+                <li><strong>User Preferences:</strong> App language, text size, and alert configuration.</li>
+                <li><strong>Backups & Reports:</strong> If the user creates a backup or generates a medical report, the file is saved locally and only shared if the user explicitly chooses to do so.</li>
+            </ul>
+
+            <h2>3. Android Permissions & Justification</h2>
+            <p>
+                To reliably notify users when their medication is due, AudioDosis requires only the following Android permissions:
+            </p>
+            <ul>
+                <li><strong><code>POST_NOTIFICATIONS</code>:</strong> Required to display notifications when a dose is due.</li>
+                <li><strong><code>SCHEDULE_EXACT_ALARM</code> & <code>USE_EXACT_ALARM</code>:</strong> Critical to trigger alarms at the exact scheduled minute, ensuring medication adherence.</li>
+                <li><strong><code>USE_FULL_SCREEN_INTENT</code>:</strong> Allows the dose alert interface to display over the lock screen, making it effortless for seniors to hear and confirm their dose without unlocking their device.</li>
+                <li><strong><code>RECEIVE_BOOT_COMPLETED</code>:</strong> Automatically reschedules active alarms whenever the device is restarted.</li>
+                <li><strong><code>VIBRATE</code> & <code>WAKE_LOCK</code>:</strong> Allows alert sounds, vibration, and enables the text-to-speech engine to speak the reminder when the screen is asleep.</li>
+            </ul>
+
+            <h2>4. Third-Party Services and Advertising</h2>
+            <p>
+                AudioDosis contains <strong>no advertisements</strong>, no in-app purchases, and no third-party tracking or telemetry SDKs (such as Firebase Analytics, Facebook SDK, or Google Analytics).
+            </p>
+
+            <h2>5. Children's Privacy</h2>
+            <p>
+                The application does not collect any personal information from any user, including children under 13 years of age.
+            </p>
+
+            <h2>6. Data Security</h2>
+            <p>
+                Because no data ever leaves your device, your data is as secure as your phone. We recommend keeping your device protected with standard device security mechanisms (PIN, biometric or password).
+            </p>
+
+            <h2>7. Contact Us</h2>
+            <p>
+                If you have any questions or inquiries about this Privacy Policy, please contact us via GitHub:
+            </p>
+            <p>
+                <a href="https://github.com/leonardoGuerraM" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">github.com/leonardoGuerraM</a>
+            </p>
+        </main>
+
+        <footer>
+            <p>© 2026 AudioDosis · CoreTech Apps · All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            const esContent = document.getElementById('content-es');
+            const enContent = document.getElementById('content-en');
+            const btnEs = document.getElementById('btn-es');
+            const btnEn = document.getElementById('btn-en');
+
+            if (lang === 'en') {
+                esContent.classList.add('hidden');
+                enContent.classList.remove('hidden');
+                btnEn.classList.add('active');
+                btnEs.classList.remove('active');
+            } else {
+                enContent.classList.add('hidden');
+                esContent.classList.remove('hidden');
+                btnEs.classList.add('active');
+                btnEn.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>
